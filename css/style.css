@@ -21,6 +21,7 @@ body{
     .envios-tarjeta{
         display: flex;
         flex-direction: column;
+        width: auto;
     }
 }
 
@@ -150,10 +151,11 @@ body{
 }
 
 .envios-tarjeta div{
-    padding: 20px;
-    margin: 15px;
+    width: 100%;
+    padding: 40px;
+    margin:68px;
     background-color: white;
-    border-radius: 15px;
+    border-radius:15px;
 }
 
 .envios-tarjeta img{
@@ -175,6 +177,12 @@ body{
     }
     .parrafos__uno{
         margin: auto;
+    }
+}
+
+@media screen and (max-width: 385px){
+    .parrafos__uno{
+        width: 260px;
     }
 }
 
@@ -209,6 +217,7 @@ body{
 
 .parrafos{
     display: flex;
+    width: 100%;
 }
 
 .parrafos__uno{
