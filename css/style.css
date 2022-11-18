@@ -15,13 +15,17 @@ body{
 
 
 @media screen and (max-width: 900px){
-    .index-video h2{
-    font: size 5px;
+    .index-video div h2{
+        font-size: 20px;
     }
+    
     .envios-tarjeta{
         display: flex;
         flex-direction: column;
         width: auto;
+    }
+    .footer div h5{
+        font-size: 10px;
     }
 }
 
@@ -106,10 +110,37 @@ body{
     font-size: 45px;
 }
 
+/*------------------FOOTER----------------------------*/
 
+
+@media screen and (max-width: 1000px){
+    .redes-sociales{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 615px){
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+    "header"
+    "video"
+    "tarjeta"
+    "footer";
+    }
+
+    .footer{
+        flex-wrap: wrap;
+    }
+    .redes-sociales{
+        text-align: center;
+    }
+}
 
 .footer{
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     grid-area: footer;
 }
@@ -119,8 +150,12 @@ body{
     height: 60px;
 }
 
+.footer h5{
+    color: white;
+}
+
 .redes-sociales{
-    margin: 30px;
+    margin: 20px;
     padding: 10px;
 }
 
@@ -129,13 +164,13 @@ body{
 }
 
 .face{
-    margin-right: 30px;
+    margin-right: 20px;
     background-color: white;
     border-radius: 10px;
 }
 
 .insta{
-    margin-right: 30px;
+    margin-right: 20px;
     background-color: white;
     border-radius: 10px;
 }
@@ -175,33 +210,10 @@ body{
     .parrafos{
         flex-direction: column;
     }
-    .parrafos__uno{
-        margin: auto;
-    }
 }
 
-@media screen and (max-width: 385px){
-    .parrafos__uno{
-        width: 260px;
-    }
-}
 
-@media screen and (min-width:600px){
-    .parrafos__uno{
-        font-size: 4px;
-        height: 10%;
-        width: 40%;
-        font-family: "Playfair Display";
-        color: white;
-        background-image: linear-gradient(rgb(6, 6, 6), rgb(52, 50, 50));
-        margin-left: 50px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        border-style: dashed;
-        border-radius: 20px;
-        padding: 20px;
-    }
-}
+
 
 .quienes-somos{
     color: rgb(0, 0, 0);
@@ -217,13 +229,11 @@ body{
 
 .parrafos{
     display: flex;
-    width: 100%;
 }
 
 .parrafos__uno{
     font-size:20px;
-    height: 10%;
-    width: 40%;
+    /* width: auto; */
     font-family: "Playfair Display";
     color: white;
     background-image: linear-gradient(rgb(6, 6, 6), rgb(52, 50, 50));
@@ -239,7 +249,7 @@ body{
 .parrafos__dos{
     font-size:20px ;    
     height: 10%;
-    width: 40%;
+    width: auto;
     font-family:"Playfair Display" ;
     color: white;
     background-image: linear-gradient(rgb(6, 6, 6), rgb(52, 50, 50));
@@ -337,6 +347,11 @@ margin-left: 10px;
     color: white;
 }
 
+#carouselExampleIndicators{
+    width: 50%;
+    margin: 0 auto;
+}
+
 .productos-img{
     width: 15%;
     height: 15%;
@@ -345,7 +360,7 @@ margin-left: 10px;
 
 .productos-img:hover{
     transform: scale(1.5);
-}
+} 
 
 .productos-parrillas{
     display: inline-flex;
