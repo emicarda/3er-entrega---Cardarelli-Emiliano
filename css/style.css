@@ -279,6 +279,7 @@ body{
     
     .section-contacto{
         width: auto;
+        justify-content: flex-start;
     }
 
 }
@@ -337,6 +338,7 @@ margin-left: 10px;
     font-size: 40px;
     padding: 15%;
     margin: 50px;
+    color: aliceblue;
 }
 
 .maps{
@@ -392,6 +394,19 @@ margin-left: 10px;
 
 /*------------------------TIENDA ONLINE---------------------------*/
 
+
+@media screen and (max-width: 400px){
+    .card{
+        width: 100%;
+        padding: 25px;
+        margin: 10px;
+    }
+    .oferta{
+        right: -56px;
+        padding: 0;
+    }
+}
+
 .card__img{
     width: 50%;
     height: 50%;
@@ -440,7 +455,9 @@ margin: 30px;
 .card-flex{
     display: flex;
     padding: 50px;    
-    flex-flow: row wrap;
+    /* flex-flow: row wrap; */
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     text-align: center;
 }
