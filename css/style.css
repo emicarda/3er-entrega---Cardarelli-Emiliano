@@ -278,15 +278,12 @@ body{
     }
     
     .section-contacto{
-        width: auto;
-        justify-content: flex-start;
+        flex-direction: column;
     }
-
 }
 
 .section-contacto{
     font-family: Arial, Helvetica, sans-serif;
-    align-items: center;
     display: flex;
     justify-content: center;
 }
@@ -300,7 +297,7 @@ body{
 .form{
     width: 30%;
     height: 40%;
-    text-align: center; 
+    text-align: center;
 }
 
 .form fieldset{
@@ -397,15 +394,45 @@ margin-left: 10px;
 
 @media screen and (max-width: 400px){
     .card{
-        width: 100%;
-        padding: 25px;
+        width: 100% !important;
+        padding: 16px;
         margin: 10px;
     }
-    .oferta{
-        right: -56px;
-        padding: 0;
+
+    .card__img {
+        width: 80% !important;
+        height: 80% !important;
     }
+
+    .card__nombre{
+        font-size: 15px !important;
+        margin-bottom: 10px !important;
+        margin-top: 10px !important;
+    }
+
+    .card__descripcion{
+        font-size: 10px !important;
+        margin-bottom: 10px !important;
+        margin-top: 10px !important;
+    }
+
+    .card__precio{
+        margin: 8px !important;
+    }
+    
+    .card-flex{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+    .oferta{
+        font-size: 20px;
+        right: -66px !important;
+        padding: 0 !important;
+    }
+
 }
+
 
 .card__img{
     width: 50%;
@@ -414,9 +441,10 @@ margin-left: 10px;
 
 .card__nombre{
     font-size: 25px;
+    font-weight: bold;
     margin-bottom: 40px;
     margin-top: 30px;
-    background-color: beige;
+    /* background-color: beige; */
     left: 10px;
 }
 
@@ -442,7 +470,7 @@ margin: 30px;
 }
 
 .card{
-    width: 30%;
+    width: 40%;
     height: 30%;
     border: solid 4px black;
     padding: 40px;
@@ -454,9 +482,9 @@ margin: 30px;
 
 .card-flex{
     display: flex;
-    padding: 50px;    
-    /* flex-flow: row wrap; */
-    flex-direction: row;
+    width: 100%;
+    padding: 50px;
+    flex-flow: row wrap;
     flex-wrap: wrap;
     justify-content: space-evenly;
     text-align: center;
