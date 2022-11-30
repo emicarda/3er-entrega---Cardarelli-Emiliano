@@ -1,0 +1,58 @@
+/*-----------------Quienes Somos--------------------------------*/
+
+@media screen and (max-width: 768px){
+.parrafos{
+        flex-direction: column;
+    }
+}
+
+
+
+
+.quienes-somos{
+    color: rgb(0, 0, 0);
+
+    h1{
+        margin-top: 60px;
+        margin-left: 40px;
+        font-size: 60px;
+        font-family: $fuente-gral;
+    
+    }
+    
+}
+
+
+.parrafos{
+    display: flex;
+}
+
+.parrafos__uno{
+    font-size:20px;
+    font-family: "Playfair Display";
+    color: white;
+    background-image: linear-gradient(rgb(6, 6, 6), rgb(52, 50, 50));
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-style: dashed;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+.parrafos__dos{
+    font-size:20px ;    
+    height: 10%;
+    width: auto;
+    font-family:"Playfair Display" ;
+    color: white;
+    background-image: linear-gradient(rgb(6, 6, 6), rgb(52, 50, 50));
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    border-style: dashed;
+    border-radius: 20px;
+    padding: 20px;
+}

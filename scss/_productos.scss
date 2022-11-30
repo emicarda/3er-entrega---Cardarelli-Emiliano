@@ -1,0 +1,41 @@
+/*----------------------PRODUCTOS---------------------------------*/
+
+.productos{
+    border: solid black;
+    margin: 20px;
+
+    h2{
+        font-family: $fuente-gral;
+        font-size: 40px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        background-color: black;
+        color: white;
+    }
+}
+
+#carouselExampleIndicators{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.productos-img{
+    width: 15%;
+    height: 15%;
+    margin: 15px;
+
+    :hover{
+        transform: scale(1.5);
+    }
+}
+
+.productos-parrillas{
+    display: inline-flex;
+    justify-content: center;
+    margin: 60px;
+}
+
+.productos-accesorios{
+    display: inline-flex;
+    justify-content: center;
+}

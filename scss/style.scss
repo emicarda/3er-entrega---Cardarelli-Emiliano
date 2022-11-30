@@ -1,0 +1,230 @@
+@import "variables";
+@import "quienessomos";
+@import "productos";
+@import "contacto";
+@import "tiendaOnline";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Source+Sans+Pro:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Playfair+Display:ital,wght@0,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@1,600&display=swap');
+
+
+/*Reseteo css*/
+*{  
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(white, black);
+}
+
+
+/*---------------- INDEX-----------------------------*/
+
+
+@media screen and (max-width: 900px){
+    .index-video div h2{
+        font-size: 20px;
+    }
+    
+    .envios-tarjeta{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+    .footer div h5{
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    .header{
+        flex-direction: column;
+    }
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    grid-template-rows:auto, auto, 200px, 150px;
+    grid-template-areas: 
+    "header header header"
+    "video video video"
+    "tarjeta tarjeta tarjeta"
+    "footer footer footer"
+    ;
+} 
+
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: header;
+}
+
+
+.header h1 {
+    font-family: "Oswald";
+    font-size: 30px;
+    padding: 10px;
+}
+
+.header img{
+    width: 200px;
+    height: 200px;
+    line-height: 1200px;
+}
+
+/* .nav-item {
+    float: left;
+    list-style: none;
+    display: inline;
+    
+} */
+
+/* modificacion de las class de bootstrap */
+.nav-link{
+    color: white; 
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 30px 60px;
+    font-family: "Oswald";
+    font-size: 20px;
+    height: 100%;
+}
+
+.nav-link:hover{
+    color:rgb(255, 255, 255) ;
+    background-color:rgb(97, 97, 97);
+}
+
+.index-video{
+    grid-area:video ;
+}
+
+.index-video video {
+    width: 100%;
+    height: 80%; 
+} 
+
+.index-video h2{
+    color: white;
+    background-color: black;
+    top: 80%;
+    left: 10%;
+    font-size: 45px;
+}
+
+/*------------------FOOTER----------------------------*/
+
+
+@media screen and (max-width: 1000px){
+    .redes-sociales{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 615px){
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+    "header"
+    "video"
+    "tarjeta"
+    "footer";
+    }
+
+    .footer{
+        flex-wrap: wrap;
+    }
+    .redes-sociales{
+        text-align: center;
+    }
+}
+
+.footer{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    grid-area: footer;
+}
+
+.footer img{
+    width: 60px;
+    height: 60px;
+}
+
+.footer h5{
+    color: white;
+}
+
+.redes-sociales{
+    margin: 20px;
+    padding: 10px;
+}
+
+.redes-sociales img:hover{
+    transform: scale(1.5);
+}
+
+.face{
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.insta{
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.envios-tarjeta{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    border: solid black;
+    background-color:black ;
+    grid-area: tarjeta;
+}
+
+.envios-tarjeta div{
+    width: 100%;
+    /* padding: 40px; */
+    margin:68px;
+    background-color: white;
+    border-radius:15px;
+}
+
+.envio, .tarjeta{
+    height: 63%;
+}
+
+.envios-tarjeta img{
+    width: 40%;
+}
+
+.envios-tarjeta p{
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+{
+  "name": "parrilla-a-tu-antojo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emicarda/segundaentrega.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emicarda/segundaentrega/issues"
+  },
+  "homepage": "https://github.com/emicarda/segundaentrega#readme",
+  "description": ""
+}

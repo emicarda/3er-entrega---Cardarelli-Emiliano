@@ -1,539 +1,468 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Source+Sans+Pro:ital,wght@1,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Playfair+Display:ital,wght@0,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@1,600&display=swap');
+/*-----------------Quienes Somos--------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Source+Sans+Pro:ital,wght@1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Playfair+Display:ital,wght@0,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@1,600&display=swap");
+@media screen and (max-width: 768px) {
+  .parrafos {
+    flex-direction: column;
+  }
+}
+.quienes-somos {
+  color: rgb(0, 0, 0);
+}
+.quienes-somos h1 {
+  margin-top: 60px;
+  margin-left: 40px;
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.parrafos {
+  display: flex;
+}
+
+.parrafos__uno {
+  font-size: 20px;
+  font-family: "Playfair Display";
+  color: white;
+  background-image: linear-gradient(rgb(6, 6, 6), rgb(52, 50, 50));
+  margin-left: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-style: dashed;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.parrafos__dos {
+  font-size: 20px;
+  height: 10%;
+  width: auto;
+  font-family: "Playfair Display";
+  color: white;
+  background-image: linear-gradient(rgb(6, 6, 6), rgb(52, 50, 50));
+  margin-left: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 50px;
+  border-style: dashed;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+/*----------------------PRODUCTOS---------------------------------*/
+.productos {
+  border: solid black;
+  margin: 20px;
+}
+.productos h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: black;
+  color: white;
+}
+
+#carouselExampleIndicators {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.productos-img {
+  width: 15%;
+  height: 15%;
+  margin: 15px;
+}
+.productos-img :hover {
+  transform: scale(1.5);
+}
+
+.productos-parrillas {
+  display: inline-flex;
+  justify-content: center;
+  margin: 60px;
+}
+
+.productos-accesorios {
+  display: inline-flex;
+  justify-content: center;
+}
+
+/*-----------------------CONTACTO--------------------------------*/
+@media screen and (max-width: 400px) {
+  .maps {
+    flex-wrap: wrap;
+    width: 40%;
+  }
+  .section-contacto {
+    flex-direction: column;
+  }
+}
+.section-contacto {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.contacto {
+  margin-top: 60px;
+  margin-left: 40px;
+  font-size: 60px;
+}
+
+.form {
+  width: 30%;
+  height: 40%;
+  text-align: center;
+}
+.form fieldset {
+  padding: 30px;
+}
+.form label {
+  font-style: italic;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px;
+}
+.form input {
+  background-color: rgb(120, 120, 120);
+  margin-left: 10px;
+}
+
+.button input {
+  margin: 10px;
+  padding: 5px;
+  background-color: black;
+  color: white;
+}
+
+.whatsapp {
+  margin: 30px;
+  padding: 30px;
+}
+.whatsapp h3 {
+  margin-bottom: 30px;
+}
+
+.btn-wa {
+  text-decoration: none;
+  background-color: rgb(0, 201, 0);
+  color: white;
+  margin-bottom: 80px;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+#mapa h3 {
+  margin: 10px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+#mapa span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  padding: 15%;
+  margin: 50px;
+  color: aliceblue;
+}
+
+.maps {
+  display: flex;
+}
+
+/*------------------------TIENDA ONLINE---------------------------*/
+@media screen and (max-width: 400px) {
+  .card {
+    width: 100% !important;
+    padding: 16px;
+    margin: 10px;
+  }
+  .card__img {
+    width: 80% !important;
+    height: 80% !important;
+  }
+  .card__nombre {
+    font-size: 15px !important;
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
+  }
+  .card__descripcion {
+    font-size: 10px !important;
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
+  }
+  .card__precio {
+    margin: 8px !important;
+  }
+  .card-flex {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+  .oferta {
+    font-size: 20px;
+    right: -66px !important;
+    padding: 0 !important;
+  }
+}
+.card__img {
+  width: 50%;
+  height: 50%;
+}
+
+.card__nombre {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  /* background-color: beige; */
+  left: 10px;
+}
+
+.card__descripcion {
+  font-size: 18px;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+.card__precio {
+  font-size: 25px;
+  font-weight: bolder;
+  margin: 30px;
+}
+
+.boton {
+  padding: 5px;
+  font-size: medium;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+.card {
+  width: 40%;
+  height: 30%;
+  border: solid 4px black;
+  padding: 40px;
+  position: relative;
+  margin: 30px;
+  background-color: rgb(109, 109, 109);
+  align-items: center;
+}
+.card p {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-flex {
+  display: flex;
+  width: 100%;
+  padding: 50px;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.oferta {
+  background-color: red;
+  color: white;
+  position: absolute;
+  top: 4px;
+  right: -82px;
+  border-radius: 100px;
+  padding: 10px;
+}
+
+.tienda-online {
+  margin-top: 60px;
+  margin-left: 40px;
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /*Reseteo css*/
-*{  
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background-image: linear-gradient(white, black);
+body {
+  background-image: linear-gradient(white, black);
 }
-
 
 /*---------------- INDEX-----------------------------*/
-
-
-@media screen and (max-width: 900px){
-    .index-video div h2{
-        font-size: 20px;
-    }
-    
-    .envios-tarjeta{
-        display: flex;
-        flex-direction: column;
-        width: auto;
-    }
-    .footer div h5{
-        font-size: 10px;
-    }
+@media screen and (max-width: 900px) {
+  .index-video div h2 {
+    font-size: 20px;
+  }
+  .envios-tarjeta {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+  .footer div h5 {
+    font-size: 10px;
+  }
 }
-
-
-@media screen and (max-width: 500px){
-    .header{
-        flex-direction: column;
-    }
+@media screen and (max-width: 500px) {
+  .header {
+    flex-direction: column;
+  }
 }
-
-
-.grid-container{
-    display: grid;
-    grid-template-columns:repeat(3,1fr) ;
-    grid-template-rows:auto, auto, 200px, 150px;
-    grid-template-areas: 
-    "header header header"
-    "video video video"
-    "tarjeta tarjeta tarjeta"
-    "footer footer footer"
-    ;
-} 
-
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto, auto, 200px, 150px;
+  grid-template-areas: "header header header" "video video video" "tarjeta tarjeta tarjeta" "footer footer footer";
+}
 
 .header {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    grid-area: header;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-area: header;
 }
-
 
 .header h1 {
-    font-family: "Oswald";
-    font-size: 30px;
-    padding: 10px;
+  font-family: "Oswald";
+  font-size: 30px;
+  padding: 10px;
 }
 
-.header img{
-    width: 200px;
-    height: 200px;
-    line-height: 1200px;
+.header img {
+  width: 200px;
+  height: 200px;
+  line-height: 1200px;
 }
 
 /* .nav-item {
     float: left;
     list-style: none;
     display: inline;
-    
+
 } */
-
 /* modificacion de las class de bootstrap */
-.nav-link{
-    color: white; 
-    background-color: rgb(0, 0, 0);
-    text-decoration: none;
-    padding: 30px 60px;
-    font-family: "Oswald";
-    font-size: 20px;
-    height: 100%;
+.nav-link {
+  color: white;
+  background-color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 30px 60px;
+  font-family: "Oswald";
+  font-size: 20px;
+  height: 100%;
 }
 
-.nav-link:hover{
-    color:rgb(255, 255, 255) ;
-    background-color:rgb(97, 97, 97);
+.nav-link:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(97, 97, 97);
 }
 
-.index-video{
-    grid-area:video ;
+.index-video {
+  grid-area: video;
 }
 
 .index-video video {
-    width: 100%;
-    height: 80%; 
-} 
+  width: 100%;
+  height: 80%;
+}
 
-.index-video h2{
-    color: white;
-    background-color: black;
-    top: 80%;
-    left: 10%;
-    font-size: 45px;
+.index-video h2 {
+  color: white;
+  background-color: black;
+  top: 80%;
+  left: 10%;
+  font-size: 45px;
 }
 
 /*------------------FOOTER----------------------------*/
-
-
-@media screen and (max-width: 1000px){
-    .redes-sociales{
-        width: 100%;
-    }
-    
-}
-
-@media screen and (max-width: 615px){
-    .grid-container{
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-    "header"
-    "video"
-    "tarjeta"
-    "footer";
-    }
-
-    .footer{
-        flex-wrap: wrap;
-    }
-    .redes-sociales{
-        text-align: center;
-    }
-}
-
-.footer{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    grid-area: footer;
-}
-
-.footer img{
-    width: 60px;
-    height: 60px;
-}
-
-.footer h5{
-    color: white;
-}
-
-.redes-sociales{
-    margin: 20px;
-    padding: 10px;
-}
-
-.redes-sociales img:hover{
-    transform: scale(1.5);
-}
-
-.face{
-    margin-right: 20px;
-    background-color: white;
-    border-radius: 10px;
-}
-
-.insta{
-    margin-right: 20px;
-    background-color: white;
-    border-radius: 10px;
-}
-
-.envios-tarjeta{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: space-around;
-    border: solid black;
-    background-color:black ;
-    grid-area: tarjeta;
-}
-
-.envios-tarjeta div{
+@media screen and (max-width: 1000px) {
+  .redes-sociales {
     width: 100%;
-    /* padding: 40px; */
-    margin:68px;
-    background-color: white;
-    border-radius:15px;
+  }
 }
-
-.envio, .tarjeta{
-    height: 63%;
-}
-
-.envios-tarjeta img{
-    width: 40%;
-}
-
-.envios-tarjeta p{
-    font-size: 15px;
-    font-family:Arial, Helvetica, sans-serif ;
-}
-
-
-
-/*-----------------Quienes Somos--------------------------------*/
-
-@media screen and (max-width: 768px){
-    .parrafos{
-        flex-direction: column;
-    }
-}
-
-
-
-
-.quienes-somos{
-    color: rgb(0, 0, 0);
-    
-}
-
-.quienes-somos h1{
-    margin-top: 60px;
-    margin-left: 40px;
-    font-size: 60px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.parrafos{
-    display: flex;
-}
-
-.parrafos__uno{
-    font-size:20px;
-    /* width: auto; */
-    font-family: "Playfair Display";
-    color: white;
-    background-image: linear-gradient(rgb(6, 6, 6), rgb(52, 50, 50));
-    margin-left: 50px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border-style: dashed;
-    border-radius: 20px;
-    padding: 20px;
-}
-
-
-.parrafos__dos{
-    font-size:20px ;    
-    height: 10%;
-    width: auto;
-    font-family:"Playfair Display" ;
-    color: white;
-    background-image: linear-gradient(rgb(6, 6, 6), rgb(52, 50, 50));
-    margin-left: 50px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-right: 50px;
-    border-style: dashed;
-    border-radius: 20px;
-    padding: 20px;
-}
-
-
-
-
-/*-----------------------CONTACTO--------------------------------*/
-
-@media screen and (max-width: 400px){
-    .maps{
-        flex-wrap: wrap;
-        width: 40%
-    }
-    
-    .section-contacto{
-        flex-direction: column;
-    }
-}
-
-.section-contacto{
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: center;
-}
-
-.contacto{
-    margin-top: 60px;
-    margin-left: 40px;
-    font-size: 60px;
-}
-
-.form{
-    width: 30%;
-    height: 40%;
-    text-align: center;
-}
-
-.form fieldset{
-    padding: 30px;
-}
-
-.form label{
-    font-style: italic;
-    font-size:16px;
-    font-weight: bold;
-    margin: 10px;
-}
-
-.form input{
-background-color: rgb(120, 120, 120);
-margin-left: 10px;
-}
-
-.button input{
-    margin: 10px;
-    padding: 5px;
-    background-color: black;
-    color: white;
-}
-
-
-.whatsapp{
-    margin: 30px;
-    padding: 30px;
-}
-
-.whatsapp h3{
-    margin-bottom: 30px;
-}
-
-.btn-wa{
-    text-decoration: none;
-    background-color: rgb(0, 201, 0);
-    color: white;
-    margin-bottom: 80px;
-    align-items: center;
-    padding: 20px;
-    border-radius: 20px;
-}
-
-
-
-
-
-#mapa h3{
-    margin: 10px;
-    background-color: black;
-    color: white;
-    padding: 10px;
-}
-
-#mapa span{
-    font-family:Arial, Helvetica, sans-serif ;
-    font-size: 40px;
-    padding: 15%;
-    margin: 50px;
-    color: aliceblue;
-}
-
-.maps{
-    display: flex;
-}
-
-
-
-/*----------------------PRODUCTOS---------------------------------*/
-
-.productos{
-    border: solid black;
-    margin: 20px;
-}
-
-.productos h2{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    background-color: black;
-    color: white;
-}
-
-#carouselExampleIndicators{
-    width: 50%;
-    margin: 0 auto;
-}
-
-.productos-img{
-    width: 15%;
-    height: 15%;
-    margin: 15px;
-}
-
-.productos-img:hover{
-    transform: scale(1.5);
-} 
-
-.productos-parrillas{
-    display: inline-flex;
-    justify-content: center;
-    margin: 60px;
-}
-
-.productos-accesorios{
-    display: inline-flex;
-    justify-content: center;
-}
-
-
-
-
-/*------------------------TIENDA ONLINE---------------------------*/
-
-
-@media screen and (max-width: 400px){
-    .card{
-        width: 100% !important;
-        padding: 16px;
-        margin: 10px;
-    }
-
-    .card__img {
-        width: 80% !important;
-        height: 80% !important;
-    }
-
-    .card__nombre{
-        font-size: 15px !important;
-        margin-bottom: 10px !important;
-        margin-top: 10px !important;
-    }
-
-    .card__descripcion{
-        font-size: 10px !important;
-        margin-bottom: 10px !important;
-        margin-top: 10px !important;
-    }
-
-    .card__precio{
-        margin: 8px !important;
-    }
-    
-    .card-flex{
-        display: flex;
-        flex-direction: column;
-        padding: 0px;
-    }
-    .oferta{
-        font-size: 20px;
-        right: -66px !important;
-        padding: 0 !important;
-    }
-
-}
-
-
-.card__img{
-    width: 50%;
-    height: 50%;
-}
-
-.card__nombre{
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 40px;
-    margin-top: 30px;
-    /* background-color: beige; */
-    left: 10px;
-}
-
-.card__descripcion{
-    font-size: 18px;
-    margin-bottom: 40px;
-    margin-top: 30px;
-}
-
-.card__precio{
-font-size: 25px;
-font-weight: bolder;
-margin: 30px;
-}
-
-.boton{
-    padding: 5px;
-    font-size: medium; 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
-    color:white;
-    background-color: black;
-    text-align: center;
-}
-
-.card{
-    width: 40%;
-    height: 30%;
-    border: solid 4px black;
-    padding: 40px;
-    position: relative;
-    margin: 30px;
-    background-color: rgb(109, 109, 109);
-    align-items: center;
-}
-
-.card-flex{
-    display: flex;
-    width: 100%;
-    padding: 50px;
-    flex-flow: row wrap;
+@media screen and (max-width: 615px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "video" "tarjeta" "footer";
+  }
+  .footer {
     flex-wrap: wrap;
-    justify-content: space-evenly;
+  }
+  .redes-sociales {
     text-align: center;
+  }
+}
+.footer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  grid-area: footer;
 }
 
-.oferta{
-    background-color: red;
-    color: white;
-    position: absolute;
-    top: 4px;
-    right: -82px;
-    border-radius: 100px;
-    padding: 10px;
+.footer img {
+  width: 60px;
+  height: 60px;
 }
 
-.card p{
-    text-align: center;
-    font-family:Arial, Helvetica, sans-serif ;
+.footer h5 {
+  color: white;
 }
 
-
-.tienda-online{
-margin-top: 60px;
-margin-left: 40px;
-font-size: 60px;
-font-family: Arial, Helvetica, sans-serif;
+.redes-sociales {
+  margin: 20px;
+  padding: 10px;
 }
 
+.redes-sociales img:hover {
+  transform: scale(1.5);
+}
+
+.face {
+  margin-right: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.insta {
+  margin-right: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.envios-tarjeta {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  border: solid black;
+  background-color: black;
+  grid-area: tarjeta;
+}
+
+.envios-tarjeta div {
+  width: 100%;
+  /* padding: 40px; */
+  margin: 68px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.envio, .tarjeta {
+  height: 63%;
+}
+
+.envios-tarjeta img {
+  width: 40%;
+}
+
+.envios-tarjeta p {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */
