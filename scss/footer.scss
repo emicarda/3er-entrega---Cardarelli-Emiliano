@@ -1,0 +1,63 @@
+/*------------------FOOTER----------------------------*/
+
+
+@media screen and (max-width: 1000px){
+    .redes-sociales{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 615px){
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+    "header"
+    "video"
+    "tarjeta"
+    "footer";
+    }
+
+    .footer{
+        flex-wrap: wrap;
+    }
+    .redes-sociales{
+        text-align: center;
+    }
+}
+
+.footer{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    grid-area: footer;
+}
+
+.footer img{
+    @include sizes(60px, 60px);
+}
+
+.footer h5{
+    color: $color-claro;
+}
+
+.redes-sociales{
+    margin: 20px;
+    padding: 10px;
+}
+
+.redes-sociales img:hover{
+    transform: scale(1.5);
+}
+
+.face{
+    margin-right: 20px;
+    background-color: $bg-claro;
+    border-radius: 10px;
+}
+
+.insta{
+    margin-right: 20px;
+    background-color: $bg-claro;
+    border-radius: 10px;
+}

@@ -24,8 +24,7 @@
 }
 
 .form{
-    width: 30%;
-    height: 40%;
+    @include sizes(30%, 40%);
     text-align: center;
 
     fieldset{
@@ -50,8 +49,7 @@
 .button input{
     margin: 10px;
     padding: 5px;
-    background-color: black;
-    color: white;
+    @extend .color-global;
 }
 
 
@@ -67,7 +65,7 @@
 .btn-wa{
     text-decoration: none;
     background-color: rgb(0, 201, 0);
-    color: white;
+    color: $color-claro;
     margin-bottom: 80px;
     align-items: center;
     padding: 20px;
@@ -80,8 +78,7 @@
 
 #mapa h3{
     margin: 10px;
-    background-color: black;
-    color: white;
+    @extend .color-global;
     padding: 10px;
 }
 

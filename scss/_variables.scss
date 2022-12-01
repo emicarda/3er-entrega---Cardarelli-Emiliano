@@ -1,1 +1,21 @@
 $fuente-gral: Arial, Helvetica, sans-serif; 
+$bg-oscuro: black;
+$bg-claro: white;
+$color-claro:white;
+$color-oscuro: black;
+
+
+/* EXTEND */
+.color-global{
+    background-color: black;
+    color:white;
+}
+
+
+
+/*MIXIN CON PARAMETROS*/
+
+@mixin sizes($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}

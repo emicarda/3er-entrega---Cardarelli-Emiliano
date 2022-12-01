@@ -44,8 +44,7 @@
 
 
 .card__img{
-    width: 50%;
-    height: 50%;
+    @include sizes(50%, 50%);
 }
 
 .card__nombre{
@@ -53,7 +52,6 @@
     font-weight: bold;
     margin-bottom: 40px;
     margin-top: 30px;
-    /* background-color: beige; */
     left: 10px;
 }
 
@@ -73,14 +71,12 @@ margin: 30px;
     padding: 5px;
     font-size: medium; 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
-    color:white;
-    background-color: black;
+    @extend .color-global;
     text-align: center;
 }
 
 .card{
-    width: 40%;
-    height: 30%;
+    @include sizes(40%, 30%);
     border: solid 4px black;
     padding: 40px;
     position: relative;
@@ -90,7 +86,7 @@ margin: 30px;
 
     p{
         text-align: center;
-        font-family:Arial, Helvetica, sans-serif ;
+        font-family: $fuente-gral;
     }
 }
 
@@ -106,7 +102,7 @@ margin: 30px;
 
 .oferta{
     background-color: red;
-    color: white;
+    color: $color-claro;
     position: absolute;
     top: 4px;
     right: -82px;

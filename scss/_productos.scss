@@ -9,8 +9,7 @@
         font-size: 40px;
         margin-top: 50px;
         margin-bottom: 50px;
-        background-color: black;
-        color: white;
+        @extend .color-global;
     }
 }
 
@@ -20,11 +19,10 @@
 }
 
 .productos-img{
-    width: 15%;
-    height: 15%;
+    @include sizes(15%, 15%);
     margin: 15px;
 
-    :hover{
+    & :hover{
         transform: scale(1.5);
     }
 }
