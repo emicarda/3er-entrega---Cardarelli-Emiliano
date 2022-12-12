@@ -72,11 +72,11 @@
     font-family: "Oswald";
     font-size: 20px;
     height: 100%;
+}
 
-    & :hover{
-        color: $color-claro ;
-        background-color:rgb(97, 97, 97);
-    }
+.nav-link:hover{
+    color: $color-oscuro; 
+    background-color:rgba(108, 108, 108, 0.567);
 }
 
 
